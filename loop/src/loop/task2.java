@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class task2 {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
 
 		Scanner sc = new Scanner(System.in);
 
@@ -17,10 +16,8 @@ public class task2 {
 
 		for(int i = 2; i <= numA; i++) {
 		    sum += i;
-
-		System.out.print("+" + i);
+		    System.out.print("+" + i);
 		}
 		System.out.println("=" + sum);
 	}
-
 }
