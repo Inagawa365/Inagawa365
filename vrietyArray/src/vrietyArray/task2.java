@@ -14,7 +14,7 @@ public class task2 {
 	   for(int num : n){
 		   if(num % 2 == 0){
 			   even.add(num);
-		    }else{
+		   }else{
 		    	odd.add(num);
 		    }
 	   }
