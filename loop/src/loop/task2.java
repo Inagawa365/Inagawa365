@@ -4,20 +4,21 @@ import java.util.Scanner;
 
 public class task2 {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+        System.out.print("数字を入力してください: ");
 
-		int numA = sc.nextInt();
-		int sum = 1;
+        Scanner sc = new Scanner(System.in);
 
-		System.out.println("数字を入力してください:" + numA);
-		System.out.print(sum);
+        int numA = sc.nextInt();
+        int sum = 1;
 
-		for(int i = 2; i <= numA; i++) {
-		    sum += i;
-		    System.out.print("+" + i);
-		}
-		System.out.println("=" + sum);
-	}
+        System.out.print(sum);
+
+        for(int i = 2; i <= numA; i++) {
+            sum += i;
+            System.out.print("+" + i);
+        }
+        System.out.println("=" + sum);
+    }
 }

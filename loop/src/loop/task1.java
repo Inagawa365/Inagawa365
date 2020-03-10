@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class task1 {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-		int numA = sc.nextInt();
-        int sum = 0;
+        int numA = sc.nextInt();
 
-        //1からnumAまでのloop
-        for(int i =1; i <= numA; i++){
-        	sum += i;
-        	System.out.println("数字を入力してください:" + numA);
-        	System.out.println( "1～" + numA + "までの合計:"+ sum);
+        //1からnumAまでのloop処理
+		int sum = 0;
+        for(int i =1; i <= numA; i++) {
+            sum += i;
         }
-	}
+        System.out.println("数字を入力してください:" + numA);
+        System.out.println( "1～" + numA + "までの合計:"+ sum);
+    }
 }
