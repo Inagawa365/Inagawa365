@@ -2,11 +2,13 @@ package instance;
 
 public class task2 {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		Person person = new Person();
+        //インスタンスの生成
+        Person person = new Person();
 
-		person.name = "稲川 和樹";
+        //インスタンスのフィールドに値を設定
+        person.name = "稲川 和樹";
         person.age = 27;
-	}
+    }
 }

@@ -2,12 +2,12 @@ package instance;
 
 public class Person {
 
-	 String name = "稲川 和樹";
-	 int age = 27;
+    String name;
+    int age;
 
-	 public void myPlofile() {
-		 System.out.println("私の名前は" + this.name + "です。");
-		 System.out.println("年齢は" + this.age + "です。");
-		 System.out.println("よろしくお願いします。");
-	 }
+    public void myPlofile() {
+        System.out.println("私の名前は" + this.name + "です。");
+        System.out.println("年齢は" + this.age + "です。");
+        System.out.println("よろしくお願いします。");
+    }
 }
