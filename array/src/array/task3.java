@@ -19,8 +19,15 @@ public class task3 {
             if(i < n.length - 1){
                 System.out.print(",");
             }
-            if(Max < n[i]){Max = n[i];}
-            if(Min > n[i]){Min = n[i];}
+
+            if(Max < n[i]){
+                Max = n[i];
+            }
+
+            if(Min > n[i]){
+                Min = n[i];
+            }
+
         }
         System.out.print("]");
         System.out.println(""); //改行を出力
