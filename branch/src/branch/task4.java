@@ -16,7 +16,7 @@ public class task4 {
         //if-else if-else文
 
         //条件1 正の整数であるか
-        if(numA <= 0 || numB <= 0){
+        if(numA < 1 || numB < 1){
             System.out.print("正の整数を入力してください");
 
         //条件2 numBはnumAの約数であるか

@@ -16,7 +16,8 @@ public class task2 {
         //if-else文
         if(a >= 10){
             System.out.print("値: " + a);//二桁の値が入力されたときはそのまま表示する
-        } else if(a < 10)
+        } else {
             System.out.print("値: " + "0" + a); //一桁の値が値が入力されたときは十の位に"0"を付加して表示する
+        }
     }
 }

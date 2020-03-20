@@ -13,22 +13,24 @@ public class task7 {
         Scanner sc = new Scanner(System.in);
         String week = sc.nextLine();
 
-        String con;
-
+        //seich文
         switch(week){
-            case "日曜" : con = "日曜は休診です";
+            case "日曜" :
+                System.out.print("日曜は休診です");
                 break;
-            case "月曜" : con = "午前診療と午後診療があります";
-            case "火曜" : con = "午前診療と午後診療があります";
-            case "水曜" : con = "午前診療と午後診療があります";
-            case "木曜" : con = "午前診療と午後診療があります";
-            case "金曜" : con = "午前診療と午後診療があります";
+            case "月曜" :
+            case "火曜" :
+            case "水曜" :
+            case "木曜" :
+            case "金曜" :
+                System.out.print("午前診療と午後診療があります");
                 break;
-            case "土曜" : con = "土曜は午前診療のみです";
+            case "土曜" :
+                System.out.print("土曜は午前診療のみです");
                 break;
-            default : con = "入力を確認してください";
+            default :
+            System.out.print("入力を確認してください");
         }
-        System.out.print(con);
     }
 
 }

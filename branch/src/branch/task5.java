@@ -17,8 +17,14 @@ public class task5 {
 
         //条件 最大値を求める
         int max = numA;
-        if(max < numB)max = numB;
-        if(max < numC)max = numC;
+
+        if(max < numB) {
+            max = numB;
+        }
+
+        if(max < numC) {
+            max = numC;
+        }
 
         //最大値の出力
         System.out.print("最大値は:"+ max);

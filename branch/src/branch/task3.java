@@ -10,9 +10,9 @@ public class task3 {
         int a = sc.nextInt();
 
         //if-else文
-        if(a > 1) {
+        if(a >= 1) {
             System.out.print("入力された数字は正の数です。");
-        }else if(a < -1) {
+        }else if(a <= -1) {
             System.out.print("入力された数字は負の数です。");
         }else if(a == 0){
             System.out.print("入力された数字は0です。");

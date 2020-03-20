@@ -15,7 +15,9 @@ public class task1 {
 
         //if文
         System.out.print("値：");
-        if(a >= 10) System.out.println(a); //10以上の値を入力した場合
-        if(a < 10) System.out.println(a * 10); //一桁の値が入力された場合は10倍する
+        if(a < 10){
+            a = a * 10; //入力された数字が一桁の時のみ10倍する
+        }
+        System.out.println(a);
     }
 }
