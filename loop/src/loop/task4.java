@@ -6,7 +6,7 @@ public class task4 {
 
     public static void main(String[] args) {
 
-        System.out.print("正の整数を入力してください： ");
+        System.out.print("正の整数を入力してください： "); //入力を受付
 
         Scanner sc = new Scanner(System.in);
         int numA  = sc.nextInt();
