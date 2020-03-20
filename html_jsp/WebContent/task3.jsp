@@ -5,9 +5,9 @@
 <head>
 
 <%! int sum = 1;
-    SimpleDateFormat f = new SimpleDateFormat("yyyy年MM月dd日");
-    Date d = new Date();
-    String now = f.format(d);
+    SimpleDateFormat format = new SimpleDateFormat("yyyy年MM月dd日");
+    Date today = new Date();
+    String now = format.format(today);
 %>
 <meta charset="UTF-8">
 <title>Insert title here</title>

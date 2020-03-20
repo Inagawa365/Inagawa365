@@ -1,0 +1,42 @@
+package jp.co.colla_tech;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class ServletTask2
+ */
+@WebServlet("/ServletTask2")
+public class ServletTask2 extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        //日時の取得
+        Date date = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日");
+        String today = sdf.format(date);
+
+        //HTMLを出力
+        response.setContentType("text/html; charset = UTF-8");
+        PrintWriter out = response.getWriter();
+        out.println("<!DOCTYPE html>");
+        out.println("<html>");
+        out.println("<head>");
+        out.println("<meta charset = 'UTF-8'>");
+        out.println("<title>Servlet Task</title>");
+        out.println("</head>");
+        out.println("<body>");
+        out.println("<h1>今日の日付:" + today + "</h1>");
+        out.println("</body>");
+        out.println("</html>");
+	}
+}
