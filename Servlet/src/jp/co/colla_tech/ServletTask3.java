@@ -2,6 +2,7 @@ package jp.co.colla_tech;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Random;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,8 +18,8 @@ public class ServletTask3 extends HttpServlet {
 
         //占いをランダムで決定
         String[] fortune = {"大吉", "中吉", "小吉", "末吉", "凶", "大凶"};
-        int fate = (int)(Math.random() * 6);
-        String luck = fortune[fate];
+        Random random = new Random();
+        String luck = fortune[random.nextInt(6)];
 
 	    response.setContentType("text/html; charset = UTF-8");
         PrintWriter out = response.getWriter();
