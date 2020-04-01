@@ -5,6 +5,7 @@ public class Animal {
     String name;
     int age;
 
+    //コンストラクタ
     public Animal() {};
     public Animal(String name, int age){
         this.name = name;
