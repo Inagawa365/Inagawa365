@@ -16,6 +16,7 @@ public class task3 {
             keta ++;
             lo = lo / 10;
         }
+        sc.close();
         System.out.println("桁数:" + keta);
     }
 }

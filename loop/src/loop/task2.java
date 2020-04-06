@@ -12,7 +12,7 @@ public class task2 {
         int numA = sc.nextInt();
         int sum = 0;
 
-        for(int i = 1; i <= numA; i++) {
+        for(int i = 1; i <= numA; i ++) {
             sum += i;
             System.out.print(i);
             if(i < numA) {
