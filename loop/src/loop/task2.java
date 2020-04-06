@@ -10,14 +10,16 @@ public class task2 {
         Scanner sc = new Scanner(System.in);
 
         int numA = sc.nextInt();
-        int sum = 1;
-
-        System.out.println(sum);
+        int sum = 0;
 
         for(int i = 1; i <= numA; i++) {
             sum += i;
-            System.out.print("+" + i);
+            System.out.print(i);
+            if(i < numA) {
+                System.out.print("+"); //numA前までの数字に"+"を表示
+            }
         }
+        sc.close();
         System.out.println("=" + sum);
     }
 }

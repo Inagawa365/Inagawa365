@@ -13,8 +13,9 @@ public class task1 {
 
         //1からnumAまでのloop処理
 		int sum = 0;
-        for(int i =1; i <= numA; i++) {
+        for(int i = 1; i <= numA; i ++) {
             sum += i;
+            sc.close();
         }
         System.out.println( "1～" + numA + "までの合計:"+ sum);
     }
