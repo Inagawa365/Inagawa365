@@ -9,12 +9,12 @@ public class task3 {
         Random ransuu = new Random(); //乱数の設定
         int[] n = new int[6]; //要素数
         int Max = 0; //ありえない最大数で初期化
-        int Min = 0; //ありえない最小値で初期化
+        int Min = 10; //ありえない最小値で初期化
 
         System.out.print("[");
 
         for(int i = 0; i < n.length; i++){
-            n[i] = ransuu.nextInt(9) + 1; // "0～9"を「 +1 」して"1～10"にする
+            n[i] = ransuu.nextInt(9);
             System.out.print(n[i]);
             if(i < n.length - 1){
                 System.out.print(",");
