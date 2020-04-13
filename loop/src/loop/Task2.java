@@ -16,10 +16,10 @@ public class Task2 {
             sum += i;
             System.out.print(i);
             if(i < numA) {
-                System.out.print("+"); //numA前までの数字に"+"を表示
+                System.out.print(" + "); //numA前までの数字に"+"を表示
             }
         }
         sc.close();
-        System.out.println("=" + sum);
+        System.out.println(" = " + sum);
     }
 }
