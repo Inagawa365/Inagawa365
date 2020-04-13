@@ -10,6 +10,9 @@ public class Person {
     static int wallet;
 
     //コンストラクタ
+    public Person(String name, int age){
+    }
+
     public Person(int money){
         Person.wallet += money;
     }

@@ -18,6 +18,7 @@ public class Main {
         System.out.println();//改行
 
         //課題4のmainメソッド
+        Animal pett = new Animal();
         Dog pet = new Dog(12.3);
 
         System.out.println("名前:" + pet.name);
@@ -25,8 +26,9 @@ public class Main {
         System.out.println("体重:" + pet.weight + "kg");
         System.out.print(pet.name + 'は');
         pet.run();
-        System.out.print(pet.name + 'は');
+        pett.sleep();
         pet.sleep();
+
     }
 
 }

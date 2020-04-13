@@ -12,8 +12,9 @@ public class Animal {
         this.age = age;
     }
 
-    //メソッドの生成
+    //sleepメソッド
     public void sleep(){
         System.out.println("眠った");
+
     }
 }

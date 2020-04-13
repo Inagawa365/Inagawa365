@@ -9,9 +9,13 @@ public class Dog extends Animal{
         this.weight = weight; //コンストラクタの追加
     }
 
-    //メソッドを生成し、Animalクラスのメソッドをオーバライドする
+    //メソッドを生成
     public void run(){
         System.out.println("走った");
-        super.sleep();
+    }
+
+    //sleepメソッドをオーバーライド
+    public void sleep() {
+        System.out.println("ポチは眠った");
     }
 }

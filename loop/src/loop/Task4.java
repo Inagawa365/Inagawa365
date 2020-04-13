@@ -2,7 +2,7 @@ package loop;
 
 import java.util.Scanner;
 
-public class task4 {
+public class Task4 {
 
     public static void main(String[] args) {
 
@@ -18,10 +18,10 @@ public class task4 {
             if(numA % i == 0){
                 System.out.print(i); //代入結果の表示
                 if(i < numA){
-                    sc.close();
                     System.out.print(",");  //numA前までの数字の後に","を表示
                 }
             }
        }
+        sc.close();
    }
 }
