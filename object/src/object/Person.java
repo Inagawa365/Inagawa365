@@ -11,6 +11,8 @@ public class Person {
 
     //コンストラクタ
     public Person(String name, int age){
+        name = "稲川和樹";
+        age = 27;
     }
 
     public Person(int money){
@@ -18,7 +20,7 @@ public class Person {
     }
 
     //コンストラクタに引数がない場合のエラーに対処
-    Person(){
+    public Person(){
     }
 
     //nane, ageのgetterとsetterの設定とカプセル化
