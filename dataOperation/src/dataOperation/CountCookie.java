@@ -28,7 +28,7 @@ public class CountCookie extends HttpServlet {
         out.println("<h1>訪問回数テスト (クッキー)</h1>");
 
         //Cookieの値を取得
-        Cookie[] cookies = request.getCookies();
+        Cookie cookies[] = request.getCookies();
 
         //Cookie変数の宣言
         Cookie visitedCookie = null;
@@ -40,7 +40,7 @@ public class CountCookie extends HttpServlet {
                     visitedCookie = cookies[i];
                 }
             }
-
+        }
             if(visitedCookie != null) {
                 int visit = Integer.parseInt(visitedCookie.getValue()) + 1;
 
@@ -56,11 +56,9 @@ public class CountCookie extends HttpServlet {
                 newCookie.setMaxAge(300);
                 response.addCookie(newCookie);
             }
-        }
 
         out.println("<a href=\"/dataOperation/CountCookie\">画面を再訪問</a>");
         out.println("</body>");
         out.println("</html>");
-
     }
 }
