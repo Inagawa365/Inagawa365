@@ -36,7 +36,7 @@ public class DeleteEmployee extends HttpServlet {
                     "jdbc:mysql://localhost:3306/task1", "Inagawa", "0720");
 
             //SQL文の実行
-            String sql = "DELETE FROM employee WHERE id=?";
+            String sql = "DELETE FROM employee WHERE id = ?";
             ps = con.prepareStatement(sql);
             ps.setInt(1, id);
             int reno = ps.executeUpdate();

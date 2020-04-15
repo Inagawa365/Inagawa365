@@ -22,12 +22,6 @@ public class search extends HttpServlet {
         response.setContentType("text/html; charset=UTF-8");
         PrintWriter out = response.getWriter();
 
-        out.println("<html>");
-        out.println("<head>");
-        out.println("<title>検索結果</title>");
-        out.println("</head>");
-        out.println("<body>");
-
         //リクエストパラメータの文字コードを指定
         request.setCharacterEncoding("UTF-8");
 
@@ -36,6 +30,11 @@ public class search extends HttpServlet {
         Connection con = null;
         PreparedStatement ps = null;
 
+        out.println("<html>");
+        out.println("<head>");
+        out.println("<title>検索結果</title>");
+        out.println("</head>");
+        out.println("<body>");
         out.println("<h1>検索結果</h1>");
 
         try {

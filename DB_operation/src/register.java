@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -22,7 +23,7 @@ public class register extends HttpServlet {
         //リクエストパラメータの取得
         int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
-        int birthday = Integer.parseInt(request.getParameter("birthday"));
+        Date birthday = Date.valueOf(request.getParameter("birthday"));
         int age = Integer.parseInt(request.getParameter("age"));
 
         Connection con = null;
@@ -37,13 +38,13 @@ public class register extends HttpServlet {
                     "jdbc:mysql://localhost:3306/task1", "Inagawa", "0720");
 
             //SQL文の実行
-            String sql = "Insert INTO employee(id, name, birthday, age) VALUES(?, ?, ?, ?)";
+            String sql = "Insert INTO employee (id, name, birthday, age) VALUES (?, ?, ?, ?)";
             stmt = con.prepareStatement(sql);
 
             //条件の「?」に値を設定
             stmt.setInt(1, id);
             stmt.setString(2, name);
-            stmt.setInt(3, birthday);
+            stmt.setDate(3, birthday);
             stmt.setInt(4, age);
 
             //SQL文に追加する

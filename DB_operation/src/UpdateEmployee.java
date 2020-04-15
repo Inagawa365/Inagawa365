@@ -35,7 +35,7 @@ public class UpdateEmployee extends HttpServlet {
                     "jdbc:mysql://localhost:3306/task1", "Inagawa", "0720");
 
             //SQL文の実行
-            String sql = "UPDATE employee SET name=? WHERE id=?";
+            String sql = "UPDATE employee SET name = ? WHERE id = ?";
             ps = con.prepareStatement(sql);
             ps.setString(1, name);
             ps.setInt(2, id);
