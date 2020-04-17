@@ -41,21 +41,24 @@ public class CountCookie extends HttpServlet {
                 }
             }
         }
-            if(visitedCookie != null) {
-                int visit = Integer.parseInt(visitedCookie.getValue()) + 1;
 
-                out.println("<p>" + visit + "回目の訪問です。</p>");
+        //訪問回数の表示
+        if(visitedCookie != null) {
+            int visit = Integer.parseInt(visitedCookie.getValue()) + 1;
 
-                visitedCookie.setValue(Integer.toString(visit));
-                visitedCookie.setMaxAge(300); //有効期限の設定
-                response.addCookie(visitedCookie); //Cookieの保存
-            }else{
-                out.println("<p>初めての訪問です。</p>");
+            out.println("<p>" + visit + "回目の訪問です。</p>");
 
-                Cookie newCookie = new Cookie("visit", "1"); //新しくCookieを作成
-                newCookie.setMaxAge(300);
-                response.addCookie(newCookie);
-            }
+            visitedCookie.setValue(Integer.toString(visit));
+            visitedCookie.setMaxAge(300); //有効期限の設定
+            response.addCookie(visitedCookie); //Cookieの保存
+
+        }else{
+            out.println("<p>初めての訪問です。</p>");
+
+            Cookie newCookie = new Cookie("visit", "1"); //新しくCookieを作成
+            newCookie.setMaxAge(300);
+            response.addCookie(newCookie);
+        }
 
         out.println("<a href=\"/dataOperation/CountCookie\">画面を再訪問</a>");
         out.println("</body>");
