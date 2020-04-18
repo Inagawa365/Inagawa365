@@ -4,20 +4,19 @@ public class Dog extends Animal{
 
     double weight; //フィールドの追加
 
-    public Dog(String name, int age) {
+    public Dog(String name, int age, double weight) {
         super(name, age);
-    }
-    public Dog(double weight){
         this.weight = weight; //コンストラクタの追加
     }
 
     //メソッドを生成
     public void run(){
-        System.out.println(name + "は走った");
+        System.out.println(this.name + "は走った");
     }
 
     @Override
     public void sleep(){
-        System.out.println(name + "は眠った");
+        System.out.print(this.name + 'は');
+        super.sleep();
     }
 }

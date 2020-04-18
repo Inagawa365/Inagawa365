@@ -19,17 +19,13 @@ public class Main {
 
         //課題4のmainメソッド
         Animal pet0 = new Animal();
-        Dog pet1 = new Dog("ポチ", 5);
-        Dog pet2 = new Dog(12.3);
+        Dog pet1 = new Dog("ポチ", 5, 12.3);
 
         System.out.println("名前:" + pet1.name);
         System.out.println("年齢:" + pet1.age + '歳');
-        System.out.println("体重:" + pet2.weight + "kg");
+        System.out.println("体重:" + pet1.weight + "kg");
         pet1.run();
         pet0.sleep();
         pet1.sleep();
-
-
     }
-
 }

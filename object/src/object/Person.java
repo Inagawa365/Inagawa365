@@ -11,8 +11,8 @@ public class Person {
 
     //コンストラクタ
     public Person(String name, int age){
-        name = "稲川和樹";
-        age = 27;
+        this.name = name;
+        this.age = age;
     }
 
     public Person(int money){
@@ -38,5 +38,10 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public void myPlofile() {
+        System.out.println("私の名前は" + this.name + "です");
+        System.out.println("私の年齢は" + this.age + "です");
     }
 }

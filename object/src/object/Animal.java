@@ -15,6 +15,5 @@ public class Animal {
     //sleepメソッド
     public void sleep(){
         System.out.println("眠った");
-
     }
 }
